@@ -191,7 +191,7 @@ const checkWinLose = (guess, tiles) => {
   const lastGuess = guessGrid.querySelectorAll(":not([data-letter])");
 
   if (lastGuess.length === 0) {
-    showAlert(`Today's word is ${targetWord}`, null);
+    showAlert(`Today's word is ${targetWord.toUpperCase()}`, null);
     stopInteraction();
   }
 };
