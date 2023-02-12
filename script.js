@@ -11,6 +11,7 @@ const msOffset = Date.now() - offsetFromDate;
 const conversionRateOfMsToDays = 86_400_000;
 const daysOffset = msOffset / conversionRateOfMsToDays;
 
+// Initial interaction with Game
 const startInteraction = () => {
   document.addEventListener("click", handleClick);
   document.addEventListener("keydown", handleKeyPress);
